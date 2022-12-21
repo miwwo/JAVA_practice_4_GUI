@@ -6,14 +6,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class prac4 extends JFrame {
-
     JPanel[] pnl = new JPanel[3];
     int madridScore = 0;
     int milanScore = 0;
-
     public String lastScorer = "N/A";
     public String winner = "DRAW";
-
     public String name1 = "AC Milan";
     public String name2 = "Real Madrid";
 
@@ -38,7 +35,6 @@ public class prac4 extends JFrame {
         pnl[1].add(lastScore,SwingConstants.CENTER);
         lastScore.setHorizontalAlignment(SwingConstants.CENTER);
         JLabel result = new JLabel("Result: "+ milanScore+" X "+madridScore);
-
         pnl[1].add(result,SwingConstants.CENTER);
         result.setHorizontalAlignment(SwingConstants.CENTER);
         add(pnl[1]);
